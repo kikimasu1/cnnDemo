@@ -11,6 +11,14 @@
     "rollup-plugin-terser": "^5.1.3",
     "svelte": "^3.31.0"
   },
+    "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",     // <--- this and
+    "deploy": "gh-pages -d build"  // <--- that
+  },
   "dependencies": {
     "@tensorflow/tfjs": "^1.4.0",
     "sirv-cli": "^0.4.4"
